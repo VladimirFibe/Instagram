@@ -25,6 +25,7 @@
 		1DF530A12A336FC2009E8A7D /* AsyncCircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncCircleImage.swift; sourceTree = "<group>"; };
 		1DF530A52A3379EA009E8A7D /* FeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedView.swift; sourceTree = "<group>"; };
 		1DF530A72A3379F5009E8A7D /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
+		1DF530A92A33908E009E8A7D /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		27307BB929CC58EA00AC6790 /* Instagram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Instagram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		27307BBC29CC58EA00AC6790 /* InstagramApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstagramApp.swift; sourceTree = "<group>"; };
 		27307BC029CC58EC00AC6790 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -152,6 +153,7 @@
 		27307BB029CC58EA00AC6790 = {
 			isa = PBXGroup;
 			children = (
+				1DF530A92A33908E009E8A7D /* README.md */,
 				27307BBB29CC58EA00AC6790 /* Instagram */,
 				27307BBA29CC58EA00AC6790 /* Products */,
 			);
