@@ -7,16 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1DF5309B2A3351BB009E8A7D /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DF5309A2A3351BB009E8A7D /* MainTabView.swift */; };
+		1DF5309D2A335C97009E8A7D /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DF5309C2A335C97009E8A7D /* ProfileView.swift */; };
+		1DF530A02A336F8D009E8A7D /* UserStatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DF5309F2A336F8D009E8A7D /* UserStatView.swift */; };
+		1DF530A22A336FC2009E8A7D /* AsyncCircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DF530A12A336FC2009E8A7D /* AsyncCircleImage.swift */; };
+		1DF530A62A3379EA009E8A7D /* FeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DF530A52A3379EA009E8A7D /* FeedView.swift */; };
+		1DF530A82A3379F5009E8A7D /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DF530A72A3379F5009E8A7D /* FeedCell.swift */; };
 		27307BBD29CC58EA00AC6790 /* InstagramApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27307BBC29CC58EA00AC6790 /* InstagramApp.swift */; };
-		27307BBF29CC58EA00AC6790 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27307BBE29CC58EA00AC6790 /* ContentView.swift */; };
 		27307BC129CC58EC00AC6790 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27307BC029CC58EC00AC6790 /* Assets.xcassets */; };
 		27307BC429CC58EC00AC6790 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27307BC329CC58EC00AC6790 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1DF5309A2A3351BB009E8A7D /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
+		1DF5309C2A335C97009E8A7D /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		1DF5309F2A336F8D009E8A7D /* UserStatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserStatView.swift; sourceTree = "<group>"; };
+		1DF530A12A336FC2009E8A7D /* AsyncCircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncCircleImage.swift; sourceTree = "<group>"; };
+		1DF530A52A3379EA009E8A7D /* FeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedView.swift; sourceTree = "<group>"; };
+		1DF530A72A3379F5009E8A7D /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
 		27307BB929CC58EA00AC6790 /* Instagram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Instagram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		27307BBC29CC58EA00AC6790 /* InstagramApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstagramApp.swift; sourceTree = "<group>"; };
-		27307BBE29CC58EA00AC6790 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		27307BC029CC58EC00AC6790 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		27307BC329CC58EC00AC6790 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -32,6 +42,113 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1D1EFD2D2A3292AD00F0F8E5 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				1DF5309A2A3351BB009E8A7D /* MainTabView.swift */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		1D1EFD2E2A3292BE00F0F8E5 /* Root */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
+		1D1EFD2F2A3292CA00F0F8E5 /* UploadPhoto */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UploadPhoto;
+			sourceTree = "<group>";
+		};
+		1D64A0182A328FA600016040 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		1D64A0192A328FA900016040 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1D64A01A2A328FAB00016040 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		1D64A01B2A328FAD00016040 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				1DF5309E2A336F72009E8A7D /* Component */,
+				1D1EFD2F2A3292CA00F0F8E5 /* UploadPhoto */,
+				1D1EFD2E2A3292BE00F0F8E5 /* Root */,
+				1D1EFD2D2A3292AD00F0F8E5 /* TabBar */,
+				1D64A0202A32907B00016040 /* Profile */,
+				1D64A01F2A32907500016040 /* Feed */,
+				1D64A01E2A32904900016040 /* Authentication */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		1D64A01C2A328FAF00016040 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				27307BBC29CC58EA00AC6790 /* InstagramApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		1D64A01D2A32900900016040 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				27307BC229CC58EC00AC6790 /* Preview Content */,
+				27307BC029CC58EC00AC6790 /* Assets.xcassets */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1D64A01E2A32904900016040 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		1D64A01F2A32907500016040 /* Feed */ = {
+			isa = PBXGroup;
+			children = (
+				1DF530A52A3379EA009E8A7D /* FeedView.swift */,
+				1DF530A72A3379F5009E8A7D /* FeedCell.swift */,
+			);
+			path = Feed;
+			sourceTree = "<group>";
+		};
+		1D64A0202A32907B00016040 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				1DF5309C2A335C97009E8A7D /* ProfileView.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		1DF5309E2A336F72009E8A7D /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				1DF5309F2A336F8D009E8A7D /* UserStatView.swift */,
+				1DF530A12A336FC2009E8A7D /* AsyncCircleImage.swift */,
+			);
+			path = Component;
+			sourceTree = "<group>";
+		};
 		27307BB029CC58EA00AC6790 = {
 			isa = PBXGroup;
 			children = (
@@ -51,10 +168,12 @@
 		27307BBB29CC58EA00AC6790 /* Instagram */ = {
 			isa = PBXGroup;
 			children = (
-				27307BBC29CC58EA00AC6790 /* InstagramApp.swift */,
-				27307BBE29CC58EA00AC6790 /* ContentView.swift */,
-				27307BC029CC58EC00AC6790 /* Assets.xcassets */,
-				27307BC229CC58EC00AC6790 /* Preview Content */,
+				1D64A01D2A32900900016040 /* Supporting Files */,
+				1D64A01C2A328FAF00016040 /* App */,
+				1D64A01B2A328FAD00016040 /* Core */,
+				1D64A01A2A328FAB00016040 /* Extensions */,
+				1D64A0192A328FA900016040 /* Model */,
+				1D64A0182A328FA600016040 /* Services */,
 			);
 			path = Instagram;
 			sourceTree = "<group>";
@@ -137,8 +256,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				27307BBF29CC58EA00AC6790 /* ContentView.swift in Sources */,
+				1DF530A82A3379F5009E8A7D /* FeedCell.swift in Sources */,
 				27307BBD29CC58EA00AC6790 /* InstagramApp.swift in Sources */,
+				1DF5309D2A335C97009E8A7D /* ProfileView.swift in Sources */,
+				1DF5309B2A3351BB009E8A7D /* MainTabView.swift in Sources */,
+				1DF530A02A336F8D009E8A7D /* UserStatView.swift in Sources */,
+				1DF530A62A3379EA009E8A7D /* FeedView.swift in Sources */,
+				1DF530A22A336FC2009E8A7D /* AsyncCircleImage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,6 +399,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -304,6 +429,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
