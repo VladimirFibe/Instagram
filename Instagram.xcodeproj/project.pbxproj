@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1DDA83302A33E45B007BD438 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DDA832F2A33E45B007BD438 /* SearchView.swift */; };
 		1DF5309B2A3351BB009E8A7D /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DF5309A2A3351BB009E8A7D /* MainTabView.swift */; };
 		1DF5309D2A335C97009E8A7D /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DF5309C2A335C97009E8A7D /* ProfileView.swift */; };
 		1DF530A02A336F8D009E8A7D /* UserStatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DF5309F2A336F8D009E8A7D /* UserStatView.swift */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1DDA832F2A33E45B007BD438 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
 		1DF5309A2A3351BB009E8A7D /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
 		1DF5309C2A335C97009E8A7D /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		1DF5309F2A336F8D009E8A7D /* UserStatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserStatView.swift; sourceTree = "<group>"; };
@@ -89,6 +91,7 @@
 		1D64A01B2A328FAD00016040 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				1DDA832E2A33E447007BD438 /* Search */,
 				1DF5309E2A336F72009E8A7D /* Component */,
 				1D1EFD2F2A3292CA00F0F8E5 /* UploadPhoto */,
 				1D1EFD2E2A3292BE00F0F8E5 /* Root */,
@@ -139,6 +142,14 @@
 				1DF5309C2A335C97009E8A7D /* ProfileView.swift */,
 			);
 			path = Profile;
+			sourceTree = "<group>";
+		};
+		1DDA832E2A33E447007BD438 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				1DDA832F2A33E45B007BD438 /* SearchView.swift */,
+			);
+			path = Search;
 			sourceTree = "<group>";
 		};
 		1DF5309E2A336F72009E8A7D /* Component */ = {
@@ -262,6 +273,7 @@
 				27307BBD29CC58EA00AC6790 /* InstagramApp.swift in Sources */,
 				1DF5309D2A335C97009E8A7D /* ProfileView.swift in Sources */,
 				1DF5309B2A3351BB009E8A7D /* MainTabView.swift in Sources */,
+				1DDA83302A33E45B007BD438 /* SearchView.swift in Sources */,
 				1DF530A02A336F8D009E8A7D /* UserStatView.swift in Sources */,
 				1DF530A62A3379EA009E8A7D /* FeedView.swift in Sources */,
 				1DF530A22A336FC2009E8A7D /* AsyncCircleImage.swift in Sources */,

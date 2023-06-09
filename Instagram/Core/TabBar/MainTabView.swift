@@ -5,7 +5,7 @@ struct MainTabView: View {
         TabView {
             FeedView()
                 .tabItem { Image(systemName: "house") }
-            Text("Search")
+            SearchView()
                 .tabItem { Image(systemName: "magnifyingglass") }
             Text("Upload Post")
                 .tabItem { Image(systemName: "plus.square") }
