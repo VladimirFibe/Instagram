@@ -1,11 +1,11 @@
 import SwiftUI
 
-struct AddEmailview: View {
-    @State private var email = ""
+struct CreatePasswordView: View {
+    @State private var password = ""
     @Environment(\.dismiss) var dismiss
     var body: some View {
         VStack {
-            Text("Add your email")
+            Text("Create a password")
                 .font(.title2)
                 .fontWeight(.bold)
                 .padding(.top)
@@ -13,12 +13,11 @@ struct AddEmailview: View {
                 .font(.footnote)
                 .foregroundStyle(.secondary)
                 .multilineTextAlignment(.center)
-            TextField("", text: $email)
-                .textInputAutocapitalization(.none)
+            SecureField("Password", text: $password)
                 .modifier(IGTextFieldModifier())
             
             NavigationLink {
-                CreateUserNameView()
+                CompleteSignUpView()
             } label: {
                 Text("Next")
                     .frame(maxWidth: .infinity)
@@ -40,5 +39,5 @@ struct AddEmailview: View {
 }
 
 #Preview {
-    AddEmailview()
+    CreatePasswordView()
 }
