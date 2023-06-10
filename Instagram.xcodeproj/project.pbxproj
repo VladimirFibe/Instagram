@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		1DDA83302A33E45B007BD438 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DDA832F2A33E45B007BD438 /* SearchView.swift */; };
 		1DDA83322A33F0CA007BD438 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DDA83312A33F0CA007BD438 /* LoginView.swift */; };
+		1DDA83342A342572007BD438 /* AddEmailview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DDA83332A342572007BD438 /* AddEmailview.swift */; };
+		1DDA83382A34306C007BD438 /* IGTextFieldModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DDA83372A34306C007BD438 /* IGTextFieldModifier.swift */; };
+		1DDA833A2A343201007BD438 /* CreateUserNameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DDA83392A343201007BD438 /* CreateUserNameView.swift */; };
 		1DF5309B2A3351BB009E8A7D /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DF5309A2A3351BB009E8A7D /* MainTabView.swift */; };
 		1DF5309D2A335C97009E8A7D /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DF5309C2A335C97009E8A7D /* ProfileView.swift */; };
 		1DF530A02A336F8D009E8A7D /* UserStatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DF5309F2A336F8D009E8A7D /* UserStatView.swift */; };
@@ -23,6 +26,9 @@
 /* Begin PBXFileReference section */
 		1DDA832F2A33E45B007BD438 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
 		1DDA83312A33F0CA007BD438 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		1DDA83332A342572007BD438 /* AddEmailview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEmailview.swift; sourceTree = "<group>"; };
+		1DDA83372A34306C007BD438 /* IGTextFieldModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IGTextFieldModifier.swift; sourceTree = "<group>"; };
+		1DDA83392A343201007BD438 /* CreateUserNameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateUserNameView.swift; sourceTree = "<group>"; };
 		1DF5309A2A3351BB009E8A7D /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
 		1DF5309C2A335C97009E8A7D /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		1DF5309F2A336F8D009E8A7D /* UserStatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserStatView.swift; sourceTree = "<group>"; };
@@ -126,6 +132,8 @@
 			isa = PBXGroup;
 			children = (
 				1DDA83312A33F0CA007BD438 /* LoginView.swift */,
+				1DDA83332A342572007BD438 /* AddEmailview.swift */,
+				1DDA83392A343201007BD438 /* CreateUserNameView.swift */,
 			);
 			path = Authentication;
 			sourceTree = "<group>";
@@ -160,6 +168,7 @@
 			children = (
 				1DF5309F2A336F8D009E8A7D /* UserStatView.swift */,
 				1DF530A12A336FC2009E8A7D /* AsyncCircleImage.swift */,
+				1DDA83372A34306C007BD438 /* IGTextFieldModifier.swift */,
 			);
 			path = Component;
 			sourceTree = "<group>";
@@ -273,11 +282,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				1DF530A82A3379F5009E8A7D /* FeedCell.swift in Sources */,
+				1DDA83342A342572007BD438 /* AddEmailview.swift in Sources */,
+				1DDA833A2A343201007BD438 /* CreateUserNameView.swift in Sources */,
 				27307BBD29CC58EA00AC6790 /* InstagramApp.swift in Sources */,
 				1DF5309D2A335C97009E8A7D /* ProfileView.swift in Sources */,
 				1DDA83322A33F0CA007BD438 /* LoginView.swift in Sources */,
 				1DF5309B2A3351BB009E8A7D /* MainTabView.swift in Sources */,
 				1DDA83302A33E45B007BD438 /* SearchView.swift in Sources */,
+				1DDA83382A34306C007BD438 /* IGTextFieldModifier.swift in Sources */,
 				1DF530A02A336F8D009E8A7D /* UserStatView.swift in Sources */,
 				1DF530A62A3379EA009E8A7D /* FeedView.swift in Sources */,
 				1DF530A22A336FC2009E8A7D /* AsyncCircleImage.swift in Sources */,
