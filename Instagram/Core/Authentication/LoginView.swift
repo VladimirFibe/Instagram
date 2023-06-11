@@ -1,8 +1,8 @@
 import SwiftUI
+import FirebaseAnalyticsSwift
 
 struct LoginView: View {
-    @State private var email = ""
-    @State private var password = ""
+    @EnvironmentObject var viewModel: AuthenticationViewModel
     var body: some View {
         NavigationStack {
             VStack {
@@ -12,10 +12,10 @@ struct LoginView: View {
                     .scaledToFit()
                     .frame(width: 220)
                 VStack {
-                    TextField("Enter your email", text: $email)
+                    TextField("Enter your email", text: $viewModel.email)
                         .textInputAutocapitalization(.none)
                         .modifier(IGTextFieldModifier())
-                    SecureField("Enter your password", text: $password)
+                    SecureField("Enter your password", text: $viewModel.password)
                         .modifier(IGTextFieldModifier())
                     Button(action: {}) {
                         Text("Forgot Password?")
@@ -24,7 +24,7 @@ struct LoginView: View {
                         .frame(maxWidth: .infinity, alignment: .trailing)
                     }
                     
-                    Button(action: {}) {
+                    Button(action: signIn) {
                         Text("Login")
                             .frame(maxWidth: .infinity)
                             .frame(height: 44)
@@ -64,10 +64,17 @@ struct LoginView: View {
                 }
             }
             .padding()
+            .analyticsScreen(name: "\(LoginView.self)")
+        }
+    }
+    func signIn() {
+        Task {
+            await viewModel.signInWithEmailPassword()
         }
     }
 }
 
 #Preview {
     LoginView()
+        .environmentObject(AuthenticationViewModel())
 }

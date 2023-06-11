@@ -1,14 +1,20 @@
 import SwiftUI
 
 struct AsyncCircleImage: View {
-    let url: String
+    let url: String?
     let width: CGFloat
     var body: some View {
-        AsyncImage(url: URL(string: url)) { image in
-            image.resizable()
-                .scaledToFill()
-        } placeholder: {
-            ProgressView()
+        VStack {
+            if let url {
+                AsyncImage(url: URL(string: url)) { image in
+                    image.resizable()
+                        .scaledToFill()
+                } placeholder: {
+                    ProgressView()
+                }
+            } else {
+                Image(systemName: "person").resizable()
+            }
         }
         .frame(width: width, height: width)
         .clipShape(Circle())

@@ -1,7 +1,7 @@
 import SwiftUI
 
 struct CreatePasswordView: View {
-    @State private var password = ""
+    @EnvironmentObject var viewModel: AuthenticationViewModel
     @Environment(\.dismiss) var dismiss
     var body: some View {
         VStack {
@@ -13,7 +13,7 @@ struct CreatePasswordView: View {
                 .font(.footnote)
                 .foregroundStyle(.secondary)
                 .multilineTextAlignment(.center)
-            SecureField("Password", text: $password)
+            SecureField("Password", text: $viewModel.password)
                 .modifier(IGTextFieldModifier())
             
             NavigationLink {
@@ -40,4 +40,6 @@ struct CreatePasswordView: View {
 
 #Preview {
     CreatePasswordView()
+        .environmentObject(AuthenticationViewModel())
+
 }

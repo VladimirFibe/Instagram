@@ -1,7 +1,7 @@
 import SwiftUI
 
 struct CreateUserNameView: View {
-    @State private var username = ""
+    @EnvironmentObject var viewModel: AuthenticationViewModel
     @Environment(\.dismiss) var dismiss
     var body: some View {
         VStack {
@@ -13,7 +13,7 @@ struct CreateUserNameView: View {
                 .font(.footnote)
                 .foregroundStyle(.secondary)
                 .multilineTextAlignment(.center)
-            TextField("", text: $username)
+            TextField("Username", text: $viewModel.username)
                 .textInputAutocapitalization(.none)
                 .modifier(IGTextFieldModifier())
             
@@ -41,4 +41,6 @@ struct CreateUserNameView: View {
 
 #Preview {
     CreateUserNameView()
+        .environmentObject(AuthenticationViewModel())
+
 }

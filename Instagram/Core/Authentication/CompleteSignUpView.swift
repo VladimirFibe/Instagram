@@ -1,6 +1,7 @@
 import SwiftUI
 
 struct CompleteSignUpView: View {
+    @EnvironmentObject var viewModel: AuthenticationViewModel
     @Environment(\.dismiss) var dismiss
     var body: some View {
         VStack {
@@ -14,7 +15,7 @@ struct CompleteSignUpView: View {
                 .multilineTextAlignment(.center)
             
             Button {
-                
+                createUser()
             } label: {
                 Text("Complete Sign Up")
             }
@@ -30,8 +31,15 @@ struct CompleteSignUpView: View {
             }
         }
     }
+    func createUser() {
+        Task {
+            await viewModel.createUserWithEmailPassword()
+        }
+    }
 }
 
 #Preview {
     CompleteSignUpView()
+        .environmentObject(AuthenticationViewModel())
+
 }
