@@ -69,7 +69,7 @@ struct LoginView: View {
     }
     func signIn() {
         Task {
-            await viewModel.signInWithEmailPassword()
+            try await viewModel.signInWithEmailPassword()
         }
     }
 }

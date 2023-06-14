@@ -169,11 +169,8 @@
 		1D64A01E2A32904900016040 /* Authentication */ = {
 			isa = PBXGroup;
 			children = (
-				1DDA83312A33F0CA007BD438 /* LoginView.swift */,
-				1DDA83332A342572007BD438 /* AddEmailview.swift */,
-				1DDA83392A343201007BD438 /* CreateUserNameView.swift */,
-				1D4E593C2A34495000F0DD40 /* CreatePasswordView.swift */,
-				1D4E593E2A344A7000F0DD40 /* CompleteSignUpView.swift */,
+				1D64A0182A328FA600016040 /* Services */,
+				1DDD821A2A3628EA002F76D6 /* Views */,
 			);
 			path = Authentication;
 			sourceTree = "<group>";
@@ -201,6 +198,18 @@
 				1DDA832F2A33E45B007BD438 /* SearchView.swift */,
 			);
 			path = Search;
+			sourceTree = "<group>";
+		};
+		1DDD821A2A3628EA002F76D6 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1DDA83312A33F0CA007BD438 /* LoginView.swift */,
+				1DDA83332A342572007BD438 /* AddEmailview.swift */,
+				1DDA83392A343201007BD438 /* CreateUserNameView.swift */,
+				1D4E593C2A34495000F0DD40 /* CreatePasswordView.swift */,
+				1D4E593E2A344A7000F0DD40 /* CompleteSignUpView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		1DF5309E2A336F72009E8A7D /* Component */ = {
@@ -239,7 +248,6 @@
 				1D64A01B2A328FAD00016040 /* Core */,
 				1D64A01A2A328FAB00016040 /* Extensions */,
 				1D64A0192A328FA900016040 /* Model */,
-				1D64A0182A328FA600016040 /* Services */,
 			);
 			path = Instagram;
 			sourceTree = "<group>";

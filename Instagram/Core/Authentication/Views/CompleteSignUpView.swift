@@ -5,7 +5,7 @@ struct CompleteSignUpView: View {
     @Environment(\.dismiss) var dismiss
     var body: some View {
         VStack {
-            Text("Welcome to Instagramm")
+            Text("Welcome to Instagram, \(viewModel.username)")
                 .font(.title2)
                 .fontWeight(.bold)
                 .padding(.top)
@@ -33,7 +33,7 @@ struct CompleteSignUpView: View {
     }
     func createUser() {
         Task {
-            await viewModel.createUserWithEmailPassword()
+            try await viewModel.createUserWithEmailPassword()
         }
     }
 }

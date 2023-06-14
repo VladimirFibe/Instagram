@@ -1,5 +1,5 @@
 import SwiftUI
-
+import FirebaseAuth
 struct ProfileView: View {
     let person: Person
     private let gridItmes: [GridItem] = [
@@ -18,7 +18,9 @@ struct ProfileView: View {
             .toolbar {
                 ToolbarItem(placement: .topBarTrailing) {
                     Button {
-                        
+                        Task {
+                        try Auth.auth().signOut()
+                        }
                     } label: {
                         Image(systemName: "line.3.horizontal")
                     }
