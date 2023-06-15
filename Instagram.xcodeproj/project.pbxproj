@@ -25,6 +25,8 @@
 		1DDA83342A342572007BD438 /* AddEmailview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DDA83332A342572007BD438 /* AddEmailview.swift */; };
 		1DDA83382A34306C007BD438 /* IGTextFieldModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DDA83372A34306C007BD438 /* IGTextFieldModifier.swift */; };
 		1DDA833A2A343201007BD438 /* CreateUserNameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DDA83392A343201007BD438 /* CreateUserNameView.swift */; };
+		1DF1E1262A3B42C5006B7B71 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DF1E1252A3B42C5006B7B71 /* ProfileViewModel.swift */; };
+		1DF1E1292A3B4D01006B7B71 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DF1E1282A3B4D01006B7B71 /* UserService.swift */; };
 		1DF5309B2A3351BB009E8A7D /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DF5309A2A3351BB009E8A7D /* MainTabView.swift */; };
 		1DF5309D2A335C97009E8A7D /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DF5309C2A335C97009E8A7D /* ProfileView.swift */; };
 		1DF530A02A336F8D009E8A7D /* UserStatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DF5309F2A336F8D009E8A7D /* UserStatView.swift */; };
@@ -49,6 +51,8 @@
 		1DDA83332A342572007BD438 /* AddEmailview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEmailview.swift; sourceTree = "<group>"; };
 		1DDA83372A34306C007BD438 /* IGTextFieldModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IGTextFieldModifier.swift; sourceTree = "<group>"; };
 		1DDA83392A343201007BD438 /* CreateUserNameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateUserNameView.swift; sourceTree = "<group>"; };
+		1DF1E1252A3B42C5006B7B71 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
+		1DF1E1282A3B4D01006B7B71 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
 		1DF5309A2A3351BB009E8A7D /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
 		1DF5309C2A335C97009E8A7D /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		1DF5309F2A336F8D009E8A7D /* UserStatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserStatView.swift; sourceTree = "<group>"; };
@@ -188,6 +192,7 @@
 			isa = PBXGroup;
 			children = (
 				1DF5309C2A335C97009E8A7D /* ProfileView.swift */,
+				1DF1E1252A3B42C5006B7B71 /* ProfileViewModel.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -210,6 +215,14 @@
 				1D4E593E2A344A7000F0DD40 /* CompleteSignUpView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		1DF1E1272A3B4CF0006B7B71 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				1DF1E1282A3B4D01006B7B71 /* UserService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 		1DF5309E2A336F72009E8A7D /* Component */ = {
@@ -243,6 +256,7 @@
 		27307BBB29CC58EA00AC6790 /* Instagram */ = {
 			isa = PBXGroup;
 			children = (
+				1DF1E1272A3B4CF0006B7B71 /* Services */,
 				1D64A01D2A32900900016040 /* Supporting Files */,
 				1D64A01C2A328FAF00016040 /* App */,
 				1D64A01B2A328FAD00016040 /* Core */,
@@ -343,6 +357,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1DF530A82A3379F5009E8A7D /* FeedCell.swift in Sources */,
+				1DF1E1262A3B42C5006B7B71 /* ProfileViewModel.swift in Sources */,
 				1D4E8E572A35AC5E007AF5A9 /* UploadPostView.swift in Sources */,
 				1DDA83342A342572007BD438 /* AddEmailview.swift in Sources */,
 				1DDA833A2A343201007BD438 /* CreateUserNameView.swift in Sources */,
@@ -357,6 +372,7 @@
 				1DDA83382A34306C007BD438 /* IGTextFieldModifier.swift in Sources */,
 				1DF530A02A336F8D009E8A7D /* UserStatView.swift in Sources */,
 				1DF530A62A3379EA009E8A7D /* FeedView.swift in Sources */,
+				1DF1E1292A3B4D01006B7B71 /* UserService.swift in Sources */,
 				1DF530A22A336FC2009E8A7D /* AsyncCircleImage.swift in Sources */,
 				1DAAE3C22A356CA300F39C86 /* Person.swift in Sources */,
 				1D4E593D2A34495000F0DD40 /* CreatePasswordView.swift in Sources */,

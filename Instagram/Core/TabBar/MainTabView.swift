@@ -9,6 +9,7 @@ enum MainTabs {
 }
 
 struct MainTabView: View {
+    let person: Person
     @State private var selection = MainTabs.feed
     var body: some View {
         TabView(selection: $selection) {
@@ -28,7 +29,7 @@ struct MainTabView: View {
                 .tag(MainTabs.notification)
 
             NavigationStack {
-                ProfileView(person: Person(email: "email", username: "username", lastname: "last", firstname: "first", bio: "bio"))
+                    ProfileView(person: person)
             }
             .tabItem { Image(systemName: "person") }
             .tag(MainTabs.profile)
@@ -37,5 +38,5 @@ struct MainTabView: View {
 }
 
 #Preview {
-    MainTabView()
+    MainTabView(person: Person(id: "", avatar: "", email: "", username: "", lastname: "", firstname: "", bio: ""))
 }

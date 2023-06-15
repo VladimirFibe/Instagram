@@ -15,6 +15,14 @@ final class AuthenticationViewModel: ObservableObject {
     @Published var username = ""
     @Published var authenticationState = AuthenticatonState.unauthenticated
     @Published var user: User?
+    @Published var person: Person?
+    
+    init() {
+        Task {
+            try await loadPersonData()
+            let _ = try await UserService.fetchAllPersons()
+        }
+    }
 }
 
 extension AuthenticationViewModel {
@@ -35,14 +43,30 @@ extension AuthenticationViewModel {
             "lastname": "",
             "bio": ""
         ]
+        reset()
         try await Firestore.firestore().collection("persons").document(uid).setData(data)
-    }
-    
-    func loadPersonData() async throws {
         
+    }
+    @MainActor
+    func loadPersonData() async throws {
+            guard let uid = Auth.auth().currentUser?.uid else { return }
+            let snapshot = try await Firestore
+                .firestore()
+                .collection("persons")
+                .document(uid)
+                .getDocument()
+        person = try? snapshot.data(as: Person.self)
+        
+            
     }
     
     func signout() {
         
+    }
+    
+    func reset() {
+        email = ""
+        password = ""
+        username = ""
     }
 }
