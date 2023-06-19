@@ -18,6 +18,7 @@
 		1D5EF3EC2A34EACF00427223 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 1D5EF3EB2A34EACF00427223 /* FirebaseFirestoreSwift */; };
 		1D5EF3EE2A34EACF00427223 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 1D5EF3ED2A34EACF00427223 /* FirebaseStorage */; };
 		1D5EF3F12A34EDAE00427223 /* FirebaseAnalyticsSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 1D5EF3F02A34EDAE00427223 /* FirebaseAnalyticsSwift */; };
+		1D76B0B52A4087B70083EF1A /* ImageUploader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D76B0B42A4087B70083EF1A /* ImageUploader.swift */; };
 		1D97F1D42A3554FC002F0011 /* AuthenticationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D97F1D32A3554FC002F0011 /* AuthenticationViewModel.swift */; };
 		1DAAE3C22A356CA300F39C86 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DAAE3C12A356CA200F39C86 /* Person.swift */; };
 		1DD72ED42A3FCDFB002C4E63 /* EditProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DD72ED32A3FCDFB002C4E63 /* EditProfileView.swift */; };
@@ -46,6 +47,7 @@
 		1D4E8E562A35AC5E007AF5A9 /* UploadPostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadPostView.swift; sourceTree = "<group>"; };
 		1D4E8E582A35B9E3007AF5A9 /* UploadPostViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadPostViewModel.swift; sourceTree = "<group>"; };
 		1D5EF3E22A34E08C00427223 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		1D76B0B42A4087B70083EF1A /* ImageUploader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageUploader.swift; sourceTree = "<group>"; };
 		1D97F1D32A3554FC002F0011 /* AuthenticationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationViewModel.swift; sourceTree = "<group>"; };
 		1DAAE3C12A356CA200F39C86 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		1DD72ED32A3FCDFB002C4E63 /* EditProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileView.swift; sourceTree = "<group>"; };
@@ -235,6 +237,7 @@
 			isa = PBXGroup;
 			children = (
 				1DF1E1282A3B4D01006B7B71 /* UserService.swift */,
+				1D76B0B42A4087B70083EF1A /* ImageUploader.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -383,6 +386,7 @@
 				1D97F1D42A3554FC002F0011 /* AuthenticationViewModel.swift in Sources */,
 				1DF5309B2A3351BB009E8A7D /* MainTabView.swift in Sources */,
 				1D4E593F2A344A7000F0DD40 /* CompleteSignUpView.swift in Sources */,
+				1D76B0B52A4087B70083EF1A /* ImageUploader.swift in Sources */,
 				1DDA83302A33E45B007BD438 /* SearchView.swift in Sources */,
 				1D4E8E592A35B9E3007AF5A9 /* UploadPostViewModel.swift in Sources */,
 				1DDA83382A34306C007BD438 /* IGTextFieldModifier.swift in Sources */,

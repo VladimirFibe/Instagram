@@ -15,6 +15,7 @@ struct EditProfileView: View {
                 Text("Edit Profile")
                 Spacer()
                 Button("Done") {
+                    Task { try await viewModel.updatePersonData() }
                     dismiss()
                 }
                 .fontWeight(.bold)
