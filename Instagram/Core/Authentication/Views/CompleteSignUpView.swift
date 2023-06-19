@@ -38,8 +38,3 @@ struct CompleteSignUpView: View {
     }
 }
 
-#Preview {
-    CompleteSignUpView()
-        .environmentObject(AuthenticationViewModel())
-
-}

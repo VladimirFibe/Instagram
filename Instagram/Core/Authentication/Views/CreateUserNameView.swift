@@ -39,8 +39,3 @@ struct CreateUserNameView: View {
     }
 }
 
-#Preview {
-    CreateUserNameView()
-        .environmentObject(AuthenticationViewModel())
-
-}

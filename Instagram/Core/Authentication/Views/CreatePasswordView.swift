@@ -38,8 +38,3 @@ struct CreatePasswordView: View {
     }
 }
 
-#Preview {
-    CreatePasswordView()
-        .environmentObject(AuthenticationViewModel())
-
-}

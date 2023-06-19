@@ -2,11 +2,15 @@ import SwiftUI
 import FirebaseAuth
 struct ProfileView: View {
     let person: Person
+    @State private var showEditProfile = false
     private let gridItmes: [GridItem] = [
         .init(.flexible(), spacing: 1),
         .init(.flexible(), spacing: 1),
         .init(.flexible(), spacing: 1)
     ]
+    var buttonTitle: String {
+        person.isCurrentPerson ? "Edit Profile" : "Follow"
+    }
     var body: some View {
             ScrollView {
                 header
@@ -48,8 +52,14 @@ struct ProfileView: View {
             }
             .font(.footnote)
             .frame(maxWidth: .infinity, alignment: .leading)
-            Button(action: {}) {
-                Text("Edit Profile")
+            Button(action: {
+                if person.isCurrentPerson {
+                    showEditProfile.toggle()
+                } else {
+                    print("follow")
+                }
+            }) {
+                Text(buttonTitle)
                     .font(.subheadline)
                     .fontWeight(.semibold)
                     .frame(height: 32)
@@ -60,6 +70,9 @@ struct ProfileView: View {
                     )
             }
             Divider()
+        }
+        .fullScreenCover(isPresented: $showEditProfile) {
+            EditProfileView()
         }
         
     }

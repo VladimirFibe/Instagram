@@ -7,12 +7,17 @@ struct InstagramApp: App {
     @StateObject var viewModel = AuthenticationViewModel()
     var body: some Scene {
         WindowGroup {
-                if Auth.auth().currentUser == nil {
-                    LoginView()
-                        .environmentObject(viewModel)
-                } else if let person = viewModel.person {
+            switch viewModel.authenticationState {
+            case .authenticated:
+                if let person = viewModel.person {
                     MainTabView(person: person)
                 }
+            case .unauthenticated:
+                LoginView()
+                    .environmentObject(viewModel)
+            case .authenticating:
+                ProgressView()
+            }
         }
     }
 }

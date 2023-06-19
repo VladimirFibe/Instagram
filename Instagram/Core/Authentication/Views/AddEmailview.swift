@@ -39,7 +39,3 @@ struct AddEmailview: View {
     }
 }
 
-#Preview {
-    AddEmailview()
-        .environmentObject(AuthenticationViewModel())
-}

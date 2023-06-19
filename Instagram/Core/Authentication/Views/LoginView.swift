@@ -40,7 +40,7 @@ struct LoginView: View {
                     }
                     .foregroundColor(.secondary)
                     
-                    Image("ContinueWithFacebook")
+                    Image(.continueWithFacebook)
                         .resizable()
                         .scaledToFit()
                         .frame(maxWidth: .infinity)
@@ -74,7 +74,3 @@ struct LoginView: View {
     }
 }
 
-#Preview {
-    LoginView()
-        .environmentObject(AuthenticationViewModel())
-}
