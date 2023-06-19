@@ -30,7 +30,7 @@ struct SearchRow: View {
     let person: Person
     var body: some View {
         HStack {
-            AsyncCircleImage(url: person.avatar, width: 40)
+            CircularImageView(url: person.avatar, width: .xSmall)
             VStack(alignment: .leading) {
                 Text(person.username).fontWeight(.semibold)
                 Text(person.email)

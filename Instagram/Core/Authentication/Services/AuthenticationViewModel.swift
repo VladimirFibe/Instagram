@@ -61,12 +61,7 @@ extension AuthenticationViewModel {
 
     func loadPersonData() async throws {
         guard let uid = Auth.auth().currentUser?.uid else { return }
-        let snapshot = try await Firestore
-            .firestore()
-            .collection("persons")
-            .document(uid)
-            .getDocument()
-        person = try? snapshot.data(as: Person.self)
+        person = try await UserService.fetchPerson(with: uid)
     }
     
     func signout() {

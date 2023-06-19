@@ -15,8 +15,10 @@ struct EditProfileView: View {
                 Text("Edit Profile")
                 Spacer()
                 Button("Done") {
-                    Task { try await viewModel.updatePersonData() }
-                    dismiss()
+                    Task {
+                        try await viewModel.updatePersonData()
+                        dismiss()
+                    }
                 }
                 .fontWeight(.bold)
             }
@@ -25,14 +27,14 @@ struct EditProfileView: View {
             Divider()
             PhotosPicker(selection: $viewModel.selectedImage) {
                 VStack {
-                    Group {
                         if let image = viewModel.profileImage {
                             image.resizable()
+                                .scaledToFill()
+                                .frame(width: 80, height: 80)
+                                .clipShape(Circle())
                         } else {
-                            Image(systemName: "person").resizable()
+                            CircularImageView(url: viewModel.person?.avatar)
                         }
-                    }
-                    .frame(width: 80, height: 80)
                     Text("Edit profile picture")
                         .font(.footnote)
                         .fontWeight(.semibold)

@@ -1,12 +1,15 @@
 import SwiftUI
+import FirebaseFirestoreSwift
 
 struct FeedView: View {
+    @StateObject var viewModel = FeedViewModel()
+    
     var body: some View {
         NavigationStack {
             ScrollView {
                 LazyVStack(spacing: 32) {
-                    ForEach(0 ..< 5) { item in
-                        FeedCell()
+                    ForEach(viewModel.posts) { post in
+                        FeedCell(post: post)
                     }
                 }
                 .padding(.top, 8)

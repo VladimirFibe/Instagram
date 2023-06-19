@@ -1,17 +1,18 @@
 import SwiftUI
 
 struct FeedCell: View {
+    let post: Post
     var body: some View {
         VStack {
             HStack {
-                AsyncCircleImage(url: "https://images.unsplash.com/photo-1430990480609-2bf7c02a6b1a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80", width: 40)
-                Text("venom")
+                CircularImageView(url: post.person?.avatar, width: .xSmall)
+                Text(post.person?.username ?? "")
                     .font(.footnote)
                     .fontWeight(.semibold)
                 Spacer()
             }
             .padding(.leading, 8)
-            AsyncImage(url: URL(string: "https://images.unsplash.com/photo-1430990480609-2bf7c02a6b1a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80")) { image in
+            AsyncImage(url: URL(string: post.imageUrl)) { image in
                 image.resizable()
                     .scaledToFill()
                     .frame(height: 400)
@@ -51,7 +52,7 @@ struct FeedCell: View {
                 .padding(.leading, 8)
             
             Group {
-                Text("batman ").fontWeight(.semibold) + Text("Spider-Man is no match!")
+                Text("\(post.person?.username ?? "") ").fontWeight(.semibold) + Text(post.caption)
             }
             .font(.footnote)
             .frame(maxWidth: .infinity, alignment: .leading)
@@ -64,8 +65,4 @@ struct FeedCell: View {
                 .padding(.leading, 8)
         }
     }
-}
-
-#Preview {
-    FeedCell()
 }

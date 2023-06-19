@@ -21,7 +21,15 @@ struct UploadPostView: View {
                 Text("New Post")
                     .fontWeight(.semibold)
                 Spacer()
-                Button(action: {}) {
+                Button(action: {
+                    Task {
+                        try await viewModel.uploadPost(caption: text)
+                        viewModel.profileImage = nil
+                        viewModel.selectedImage = nil
+                        text = ""
+                        selection = .feed
+                    }
+                }) {
                     Text("Upload")
                         .fontWeight(.semibold)
                 }

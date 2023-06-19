@@ -18,3 +18,13 @@ struct Person: Identifiable, Hashable, Codable {
         }
     }
 }
+
+struct Post: Identifiable, Codable {
+    @DocumentID var id: String?
+    let ownerUid: String
+    var caption: String
+    var likes: Int
+    var imageUrl: String
+    @ServerTimestamp var created: Timestamp?
+    var person: Person?
+}
