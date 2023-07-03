@@ -34,6 +34,7 @@ struct SearchRow: View {
             VStack(alignment: .leading) {
                 Text(person.username).fontWeight(.semibold)
                 Text(person.email)
+                    .font(.largeTitle)
             }
             .font(.footnote)
             

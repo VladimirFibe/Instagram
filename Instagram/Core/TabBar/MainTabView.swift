@@ -24,7 +24,7 @@ struct MainTabView: View {
                 .tabItem { Image(systemName: "plus.square") }
                 .tag(MainTabs.upload)
 
-            Text("Notification")
+            VideoFeedView()
                 .tabItem { Image(systemName: "heart") }
                 .tag(MainTabs.notification)
 
