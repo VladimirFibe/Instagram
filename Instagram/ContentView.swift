@@ -1,21 +1,19 @@
-//
-//  ContentView.swift
-//  Instagram
-//
-//  Created by Vladimir Fibe on 20.09.2023.
-//
-
 import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        TabView {
+            Text("Feed")
+                .tabItem { Image(systemName: "house") }
+            Text("Search")
+                .tabItem { Image(systemName: "magnifyingglass") }
+            Text("Upload Post")
+                .tabItem { Image(systemName: "plus.square") }
+            Text("Notifications")
+                .tabItem { Image(systemName: "heart") }
+            ProfileView()
+                .tabItem { Image(systemName: "person") }
         }
-        .padding()
     }
 }
 
