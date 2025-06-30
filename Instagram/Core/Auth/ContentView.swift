@@ -1,10 +1,3 @@
-//
-//  ContentView.swift
-//  Instagram
-//
-//  Created by Almaty on 30.06.2025.
-//
-
 import SwiftUI
 
 struct ContentView: View {
