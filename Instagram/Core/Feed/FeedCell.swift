@@ -23,35 +23,51 @@ struct FeedCell: View {
                 
                 Spacer()
             } // Image + Username
-            .padding(.leading)
+            .padding(.leading, 8)
             Image("jsoundo")
                 .resizable()
                 .scaledToFill()
                 .frame(height: 400)
                 .clipShape(Rectangle())
             
-            HStack(spacing: 16) {
-                Button {
+            VStack(alignment: .leading) {
+                HStack(spacing: 16) {
+                    Button {
+                        
+                    } label: {
+                        Image(systemName: "heart")
+                    }
                     
-                } label: {
-                    Image(systemName: "heart")
+                    Button {
+                        
+                    } label: {
+                        Image(systemName: "bubble.right")
+                    }
+                    
+                    Button {
+                        
+                    } label: {
+                        Image(systemName: "paperplane")
+                    }
+                } // Action buttons
+                
+                Text("23 likes")
+                    .fontWeight(.semibold)
+                
+                HStack {
+                    Text("batman ").fontWeight(.semibold) + 
+                    Text("This is some caption for now")
                 }
                 
-                Button {
+                Text("6h ago")
+                    .foregroundStyle(.secondary)
                     
-                } label: {
-                    Image(systemName: "bubble.right")
-                }
-                
-                Button {
-                    
-                } label: {
-                    Image(systemName: "paperplane")
-                }
-                
-                Spacer()
-            } // Action buttons
+            }
+            .font(.footnote)
+            .frame(maxWidth: .infinity, alignment: .leading)
             .padding(.leading, 8)
+            .padding(.top, 4)
+            
         }
     }
 }

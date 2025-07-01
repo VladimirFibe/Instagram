@@ -2,7 +2,24 @@ import SwiftUI
 
 struct FeedView: View {
     var body: some View {
-        FeedCell()
+        NavigationStack {
+            ScrollView {
+                LazyVStack(spacing: 32) {
+                    ForEach(1...10, id: \.self) { _ in
+                        FeedCell()
+                    }
+                }
+                .padding(.top, 8)
+            }
+            .navigationTitle("Feed")
+            .navigationBarTitleDisplayMode(.inline)
+            .toolbar {
+                ToolbarItem(placement: .confirmationAction) {
+                    Image(systemName: "paperplane")
+                        .imageScale(.large)
+                }
+            }
+        }
     }
 }
 
