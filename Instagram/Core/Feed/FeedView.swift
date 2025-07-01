@@ -14,6 +14,14 @@ struct FeedView: View {
             .navigationTitle("Feed")
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {
+                ToolbarItem(placement: .cancellationAction) {
+                    Image("instagramLogo")
+                        .renderingMode(.original)
+                        .resizable()
+                        .scaledToFit()
+                        .frame(height: 42)
+                        
+                }
                 ToolbarItem(placement: .confirmationAction) {
                     Image(systemName: "paperplane")
                         .imageScale(.large)
